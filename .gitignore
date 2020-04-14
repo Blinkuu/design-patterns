@@ -30,3 +30,8 @@
 *.exe
 *.out
 *.app
+
+# Additional
+*.swp
+.ccls-cache
+build
