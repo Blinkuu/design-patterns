@@ -12,6 +12,8 @@ public:
 
 class city_node : public node {
 public:
+  city_node(uint32_t population) : m_population{population} {}
+
   virtual void accept(visitor &visitor) override { visitor.visit(*this); }
 
   [[nodiscard]] std::string get_info() const {
@@ -31,6 +33,8 @@ private:
 
 class village_node : public node {
 public:
+  village_node(uint32_t population) : m_population{population} {}
+
   virtual void accept(visitor &visitor) override { visitor.visit(*this); }
 
   [[nodiscard]] std::string get_info() const {
